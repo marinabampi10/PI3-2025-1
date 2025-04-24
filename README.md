@@ -19,4 +19,4 @@ O sistema será modular, permitindo a ativação ou desativação de cada contro
 	Com isso, o projeto entregará uma solução funcional de controle embarcado, implementada de forma autônoma e adaptada à estrutura real da bancada. A expectativa é obter um controle estável, responsivo e confiável, que permita atuar sobre variáveis reais de processo com precisão e repetibilidade, servindo como uma base para futuras melhorias e integrações com sistemas de supervisão.
 
 
-	
+	dfosfsl
