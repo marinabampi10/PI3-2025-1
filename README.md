@@ -19,4 +19,28 @@ O sistema será modular, permitindo a ativação ou desativação de cada contro
 	Com isso, o projeto entregará uma solução funcional de controle embarcado, implementada de forma autônoma e adaptada à estrutura real da bancada. A expectativa é obter um controle estável, responsivo e confiável, que permita atuar sobre variáveis reais de processo com precisão e repetibilidade, servindo como uma base para futuras melhorias e integrações com sistemas de supervisão.
 
 
+
+## ETAPA 2:
+
+#Circuito de interface ESP/Bancada
+Início: O ESP é ligado e começa a executar o código que controla o processo. 
+
+Conecta Wi-FI: O próximo passo é estabelecer uma conexão Wi-fi, que é essencial, pois será utilizada para a comunicação remota entre o micrcontrolador e o sistema de controle, permitindo o monitoramento em tempo real e o envio dos comandos para a bancada. 
+
+Inicia Servidor WEB: O sistema configura e ativa um servidor web integrado ao ESP. Através dessa interface, é possível acessar a bancada remotamente, visualizar informações do processo e enviar comandos diretamente por um navegador.
+
+Configura periféricos (ADC, Timers, GPIO): Nesta etapa, o microcontrolador configura os periféricos necessários, incluindo o conversor analógico-digital (ADC) para leitura de sensores, temporizadores para o controle de tarefas periódicas e os pinos de entrada/saída digital (GPIO) para o controle de atuadores e leitura de sensores digitais. 
+
+Requisição de dados: COm o sistema configurado e em operação, ele monitora constantemente requisições externas. Esse ponto de decisão verifica se o sistema recebeu uma solicitação de dados de algum dispositivo externo. Caso não haja uma requisição de dados, o sistema retorna para o estado de espera, aguardando novas solicitações. Se houver uma requisição, o sistema processa o pedido. 
+
+Retorna dado: Se é identificada uma requisição, o microcontrolador processa as informações solicitadas (como leitura de sensores ou estados dos atuadores) e as envia ao dispositivo solicitante via servidor web, permitindo o monitoramento remoto em tempo real. 
+
+Esse processo garante que o usuário consiga acessar e controlar a bancada remotamente, monitorando e ajustando os parâmetros em tempo real por meio da interface web. 
+
+
+
+
+
+
+
 	
