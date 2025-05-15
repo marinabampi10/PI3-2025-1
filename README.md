@@ -22,7 +22,7 @@ O sistema será modular, permitindo a ativação ou desativação de cada contro
 
 ## ETAPA 2:
 
-#Circuito de interface ESP/Bancada
+# Circuito de interface ESP/Bancada
 Início: O ESP é ligado e começa a executar o código que controla o processo. 
 
 Conecta Wi-FI: O próximo passo é estabelecer uma conexão Wi-fi, que é essencial, pois será utilizada para a comunicação remota entre o micrcontrolador e o sistema de controle, permitindo o monitoramento em tempo real e o envio dos comandos para a bancada. 
